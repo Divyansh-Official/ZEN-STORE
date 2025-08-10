@@ -50,11 +50,10 @@ dependencies {
     implementation 'mysql:mysql-connector-java:8.0.33'
 
 //    SQLite
-    implementation 'org.xerial:sqlite-jdbc:3.43.0'
-
+    implementation 'org.xerial:sqlite-jdbc:3.49.1.0'
 //    MongoDB
     implementation 'org.mongodb:mongo-java-driver:3.12.14'
-    implementation 'org.mongodb:mongodb-driver-sync:4.11.1'
+//    implementation 'org.mongodb:mongodb-driver-sync:4.11.1'
 
 //    Animation
     implementation 'com.airbnb.android:lottie:6.6.6'
