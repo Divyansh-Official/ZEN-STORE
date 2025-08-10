@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ZENSTORE" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ZENSTORE" parent="Base.Theme.ZENSTORE" />
+
+
+
+
+
+    <style name="BottomNavigationAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/main_bottom_navigation_slide_right_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/main_bottom_navigation_slide_left_anim</item>
+    </style>
+</resources>

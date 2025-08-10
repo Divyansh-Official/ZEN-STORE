@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black">#FF000000</color>
+    <color name="White">#FFFFFFFF</color>
+
+    <color name="GreyShade1">#DAA7A7A7</color>
+    <color name="GreyShade2">#DA757575</color>
+    <color name="GreyShade3">#4A4A4A</color>
+    <color name="GreyShade4">#DA323232</color>
+    <color name="GreyShade5">#DA2B2B2B</color>
+    <color name="GreyShade6">#2B2B2B</color>
+
+
+    <color name="CustomColor1">#F3DBCE</color>
+    <color name="CustomColor2">#FFCDB2</color>
+    <color name="CustomColor3">#FFB4A2</color>
+    <color name="CustomColor4">#E5989B</color>
+    <color name="CustomColor5">#d3b28d</color>
+    <color name="CustomColor6">#e9ccae</color>
+    <color name="CustomColor7">#63493E</color>
+    <color name="CustomColor8">#AAEB97</color>
+
+</resources>
