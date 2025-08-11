@@ -57,6 +57,11 @@ dependencies {
 
 //    Animation
     implementation 'com.airbnb.android:lottie:6.6.6'
+
+//    Blur Effect]
+//    implementation 'com.eightbitlab:blurview:1.6.6'
+    implementation 'com.github.Dimezis:BlurView:version-1.6.6'
+
     
 
 

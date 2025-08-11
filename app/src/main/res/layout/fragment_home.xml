@@ -6,33 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/CustomColor7"
+        android:background="#FBF4F1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <FrameLayout
+            android:id="@+id/glassEffectLayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:alpha="0.5"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/home_menu_bar_image"
-            android:tint="@color/CustomColor1"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_menu_bar_container_bg"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:alpha="0.5"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:src="@drawable/home_menu_bar_image"-->
+<!--            android:tint="@color/CustomColor1"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />-->
+
+        <ImageView
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/home_menu_bar_profile_button_bg"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="7.5dp"
+            android:src="@drawable/account_icon01"
+            android:tint="@color/White"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/cancelButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="30dp"
             android:background="@drawable/home_menu_bar_cancel_button_bg"
             android:clickable="true"
             android:elevation="10dp"
@@ -45,26 +75,43 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/formal_font_3"
+            android:fontFamily="@font/formal_font_2"
             android:text="M  E  N  U"
-            android:textColor="@color/White"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/CustomColor7"
             android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="@+id/cancelButton"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/home_menu_bar_settings_button_bg"
-            android:elevation="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/cancelButton">
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginBottom="85dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profileButton"
+            app:layout_constraintTop_toBottomOf="@+id/cancelButton">
 
+            <com.google.android.material.navigation.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0063493E"
+                app:itemRippleColor="@color/White"
+                app:itemIconTint="@color/CustomColor7"
+                app:itemTextColor="@color/CustomColor7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/home_side_navigation" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

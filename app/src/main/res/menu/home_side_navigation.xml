@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/addresses"
+            android:icon="@drawable/address_icon01"
+            android:title="Saved Address" />
+
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/cart_icon01"
+            android:title="Cart" />
+
+        <item
+            android:id="@+id/orders"
+            android:icon="@drawable/order_icon01"
+            android:title="My Orders" />
+
+        <item android:id="@+id/return_exchange"
+            android:icon="@drawable/return_exchange_icon01"
+            android:title="Return/Exchange" />
+
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings_icon01"
+            android:title="Setiings"/>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout_icon01"
+            android:title="Log Out"/>
+
+    </group>
+
+</menu>

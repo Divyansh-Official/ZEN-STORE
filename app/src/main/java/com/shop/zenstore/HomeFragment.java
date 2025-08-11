@@ -1,7 +1,11 @@
 package com.shop.zenstore;
 
 import static android.view.View.GONE;
+import static android.view.View.VISIBLE;
 
+import android.graphics.RenderEffect;
+import android.graphics.Shader;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -65,6 +69,7 @@ public class HomeFragment extends Fragment {
                         .start();
 
                 binding.menuButton.setVisibility(GONE);
+                binding.cancelButton.setVisibility(VISIBLE);
             }
         });
 
@@ -86,9 +91,19 @@ public class HomeFragment extends Fragment {
                         .translationY(0f)
                         .setDuration(300)
                         .start();
+
+                binding.menuButton.setVisibility(VISIBLE);
+                binding.cancelButton.setVisibility(GONE);
             }
             isShrunk = !isShrunk;
         });
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            // Apply native blur effect
+            float blurRadius = 25f;
+            RenderEffect blurEffect = RenderEffect.createBlurEffect(blurRadius, blurRadius, Shader.TileMode.CLAMP);
+            binding.glassEffectLayout.setRenderEffect(blurEffect);
+        }
 
     }
 
