@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPVerificationActivity"
+    android:background="@color/CustomColor10">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0.1dp"
+            android:layout_height="0.1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="-100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/sign_up_in_background_container_top_bottom_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="-100dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/sign_up_in_background_container_top_bottom_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/formal_font_4"
+        android:text="98765xxxxx"
+        android:textColor="@color/White"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:tint="@color/CustomColor1"
+        android:src="@drawable/zen_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/formal_font_4"
+        android:text="STORE"
+        android:textColor="@color/CustomColor1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/formal_font_4"
+            android:gravity="center"
+            android:text="Verify OTP"
+            android:textColor="@color/White"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0.1dp"
+            android:layout_height="0.1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/otp_verification_input_container_bg"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:orientation="horizontal">
+
+               <EditText
+                   android:id="@+id/otp1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/otp_verification_input_bg"
+                   android:gravity="center"
+                   android:hint="X"
+                   android:inputType="number"
+                   android:maxLength="1"
+                   android:padding="10dp"
+                   android:textColor="@color/White"
+                   android:textColorHint="@color/White" />
+
+               <EditText
+                   android:id="@+id/otp2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/otp_verification_input_bg"
+                   android:gravity="center"
+                   android:hint="X"
+                   android:inputType="number"
+                   android:maxLength="1"
+                   android:padding="10dp"
+                   android:textColor="@color/White"
+                   android:textColorHint="@color/White" />
+
+               <EditText
+                   android:id="@+id/otp3"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/otp_verification_input_bg"
+                   android:gravity="center"
+                   android:hint="X"
+                   android:inputType="number"
+                   android:maxLength="1"
+                   android:padding="10dp"
+                   android:textColor="@color/White"
+                   android:textColorHint="@color/White" />
+
+               <EditText
+                   android:id="@+id/otp4"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/otp_verification_input_bg"
+                   android:gravity="center"
+                   android:hint="X"
+                   android:inputType="number"
+                   android:maxLength="1"
+                   android:padding="10dp"
+                   android:textColor="@color/White"
+                   android:textColorHint="@color/White" />
+
+               <EditText
+                   android:id="@+id/otp5"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/otp_verification_input_bg"
+                   android:gravity="center"
+                   android:hint="X"
+                   android:inputType="number"
+                   android:maxLength="1"
+                   android:padding="10dp"
+                   android:textColor="@color/White"
+                   android:textColorHint="@color/White" />
+
+               <EditText
+                   android:id="@+id/otp6"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/otp_verification_input_bg"
+                   android:gravity="center"
+                   android:hint="X"
+                   android:inputType="number"
+                   android:maxLength="1"
+                   android:padding="10dp"
+                   android:textColor="@color/White"
+                   android:textColorHint="@color/White" />
+
+           </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:backgroundTint="@color/CustomColor7"
+            android:fontFamily="@font/formal_font_4"
+            android:text="Verify Yourself"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/goBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/formal_font_4"
+            android:text="Go Back"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verifyButton"
+            app:layout_constraintTop_toBottomOf="@+id/verifyButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
